@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yin-Yang</title>
+</head>
+<style>
+    body{
+        background-color:rgb(94, 94, 94); 
+    }
+    .yinyang{
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+        height:100vh;
+    }
+    .outer{
+        height:300px;
+        width:300px;
+        border-radius: 50%;
+        transition: all 0.5s ease;
+    }
+    .circle{
+        height:150px;
+        width:150px;
+    }
+    #C1{
+        border-top-left-radius: 100%;
+        background-color: black;
+        float: left;
+        transition: background-color 0.5s ease;
+    }
+    #C2{
+        border-top-right-radius: 100%;
+        background-color: white;
+        float: right;
+        transition: background-color 0.5s ease;
+    }
+    #C3{
+        border-bottom-left-radius: 100%;
+        background-color: black;
+        float: left;
+        transition: background-color 0.5s ease;
+    }
+    #C4{
+        border-bottom-right-radius: 100%;
+        background-color: white;
+        float: right;
+        transition: background-color 0.5s ease;
+    }
+    .b{
+        height:150px;
+        width:150px;
+        border-radius: 50%;
+        transition: background-color 0.5s ease;
+    }
+    #b1{
+        background-color: black;
+        transform: translateX(75px);
+    }
+    #b2{
+        background-color: black;
+        transform: translateX(-75px);
+    }
+    #b3{
+        background-color: white;
+        transform: translateX(75px);
+    }
+    #b4{
+        background-color: white;
+        transform: translateX(-75px);
+    } 
+    .s{
+        height:50px;
+        width:50px;
+        border-radius:50%;
+        transform:translate(50px,50px);
+        transition: background-color 0.5s ease;
+    }
+    #s1{
+        background-color: white; 
+    }
+    #s2{
+        background-color: white;
+    }
+    #s3{
+        background-color: black; 
+    }
+    #s4{
+        background-color: black;
+    }
+    .outer:hover #s1 { background-color: black; }
+    .outer:hover #s2 { background-color: black; }
+    .outer:hover #s3 { background-color: white; }
+    .outer:hover #s4 { background-color: white; }
+    .outer:hover #b1 { background-color: white; }
+    .outer:hover #b2 { background-color: white; }
+    .outer:hover #b3 { background-color: black; }
+    .outer:hover #b4 { background-color: black; }
+    .outer:hover #C1 { background-color: white; }
+    .outer:hover #C2 { background-color: black; }
+    .outer:hover #C3 { background-color: white; }
+    .outer:hover #C4 { background-color: black; }
+</style>
+<body>
+    <div class="yinyang">
+        <div class="outer">
+            <div class="circle"id="C1">
+                <div class="b" id="b1">
+                    <div class="s" id="s1"></div>
+                </div>
+            </div>
+            <div class="circle"id="C2">
+                <div class="b" id="b2">
+                    <div class="s" id="s2"></div>
+                </div>
+            </div>
+            <div class="circle"id="C3">
+                <div class="b" id="b3">
+                    <div class="s" id="s3"></div>
+                </div>
+            </div>
+            <div class="circle"id="C4">
+                <div class="b" id="b4">
+                    <div class="s" id="s4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
