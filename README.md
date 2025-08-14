@@ -15,7 +15,7 @@ Minimal & clean code that you can easily customize.
 
 # Preview
 
-
+![YinYang](yinyang.gif)
 
 # Inspiration
 
